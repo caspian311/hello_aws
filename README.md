@@ -10,9 +10,15 @@ To run the app locally...
 
     ./run.sh
 
-To build the Docker image...
+To build and publish the Docker image...
 
-    docker build .
+    docker build -t caspian311/hello_aws .
+    docker login
+    docker push caspian311/hello_aws
+    
+To run the Docker image...
+
+    docker run -d --name hello_aws -p 80:4444 caspian311/hello_aws
 
 To create the EC2 instance...
 
