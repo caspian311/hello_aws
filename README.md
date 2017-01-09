@@ -24,3 +24,6 @@ To create the EC2 instance...
 
     terraform apply
 
+To remove all EC2 instances...
+
+    terraform destroy
